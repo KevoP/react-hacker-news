@@ -61,11 +61,11 @@ class App extends Component {
         <div className="App">
             <Nav />
             <div className="site_main container">
-                <ul>
+                <ol className="stories">
                     {items.map( (story, index) => <StoryListItem key={index} story={story} index={index}/> )}
-                </ul>
+                </ol>
+                <a href="#">More</a>
             </div>
-            <a href="#">More</a>
             <Footer />
         </div>
     )}

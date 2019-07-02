@@ -31,8 +31,11 @@ class Nav extends Component
                             <li>
                                 <a href="#">submit</a>
                             </li>
+                            <li>
+                                <a href="#" className="login">login</a>
+                            </li>
                         </ul>
-                        <a href="#" className="login">login</a>
+                        
                     </nav>    
                 </header>
             )
