@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Nav from './Nav';
 import Footer from './Footer';
 import StoryListItem from './StoryListItem';
+import CSS from '../App.css';
 
 class App extends Component {
 
@@ -59,13 +60,13 @@ class App extends Component {
         return (
         <div className="App">
             <Nav />
-            <div className="site_main">
+            <div className="site_main container">
                 <ul>
                     {items.map( (story, index) => <StoryListItem key={index} story={story} index={index}/> )}
                 </ul>
             </div>
             <a href="#">More</a>
-        <Footer />
+            <Footer />
         </div>
     )}
 }

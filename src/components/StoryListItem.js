@@ -7,12 +7,14 @@ class StoryListItem extends Component
     render(){
 
         const {index, story} = this.props;
+        const upvote_link = `vote?${story.id}=&how=up&goto=news`;
+        const upvote_id = `up_${story.id}`;
 
         return (<li>
                 <div>
                     {index + 1}. &nbsp;
-                    <a href="vote?{story.id}=&how=up&goto=news" id="up_{story.id}" className="upvote">up vote</a> &nbsp;
-                    <a href="{story.url}">{story.title}</a> &nbsp;
+                    <a href={upvote_link} id={upvote_id} className="upvote">up vote</a> &nbsp;
+                    <a href={story.url}>{story.title}</a> &nbsp;
                     <a href="from?{story.url}">(site)</a> &nbsp;
                 </div>
                 <div>
