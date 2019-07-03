@@ -60,6 +60,29 @@ footer{
   font-weight: 600;
 }
 
+a{
+  font-weight: 600;
+  color: #AAEEDD;
+}
+
+/* Story Items */
+.story-item{
+  margin: 1px 0;
+  background: #333344;
+  list-style-position: outside;
+}
+
+.story-item > .flex{
+  background: #333344;
+  padding: 12px 24px 12px 48px;
+  margin-left: -36px;
+}
+
+.story-item > .flex > a {
+  display: inline-block;
+  margin-right: 12px;
+}
+
 /* Footer */
 footer{
   font-size: 12px;
